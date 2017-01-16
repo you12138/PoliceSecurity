@@ -12,7 +12,7 @@
 #import "NetWorkSingleton.h"
 #import "WeatherModel.h"
 #import "MJExtension.h"
-
+#import "Masonry.h"
 
 #import "AlertHYFB.h"
 
@@ -31,8 +31,46 @@
     
     self.view.backgroundColor = RGBA(2, 12, 49, 1.0);
     
-    [self loadMyView];
+    if ([[UIDevice currentDevice].model isEqualToString:@"iPhone"]) {
+        [self loadMyView];
+    }else {
+//        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        UIButton *btn = [UIButton buttonWithType:(UIButtonTypeSystem)];
+        [btn setTitle:@"Click Me" forState:(UIControlStateNormal)];
+        btn.backgroundColor = [UIColor orangeColor];
+        btn.center = self.view.center;
+        [self.view addSubview:btn];
+        
+        [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(self.view);
+            make.width.offset(100);
+            make.height.offset(100);
+        }];
+        
+        btn.tag = 1000000;
+        [btn addTarget:self action:@selector(iPadAction) forControlEvents:(UIControlEventTouchUpInside)];
+        
+    }
     
+}
+
+- (void)iPadAction
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"TIPS" message:@"This is an iPhone application, please open to get a better experience in the iPhone" preferredStyle:(UIAlertControllerStyleAlert)];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"style:UIAlertActionStyleCancel handler:nil];
+    
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Go"style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self loadMyView];
+        UIButton *btn = [(UIButton *)self.view viewWithTag:1000000];
+        [btn removeFromSuperview];
+    }];
+    
+    [alert addAction:cancelAction];
+    
+    [alert addAction:okAction];
+    
+    [self presentViewController:alert animated:YES completion:^{
+    }];
 }
 
 - (void)loadMyView

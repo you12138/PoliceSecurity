@@ -15,7 +15,7 @@
     if (self = [super initWithFrame:frame]) {
         
         self.bg_img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-        _bg_img.contentMode = UIViewContentModeCenter;
+//        _bg_img.contentMode = UIViewContentModeCenter;
         self.bg_img.image = [UIImage imageNamed:@"行业应用分布"];
         [self addSubview:self.bg_img];
         
@@ -23,7 +23,7 @@
         _areaLabel.textColor = [UIColor whiteColor];
         _areaLabel.textAlignment = NSTextAlignmentCenter;
         _areaLabel.text = @"坂上社区:";
-        _areaLabel.font = [UIFont systemFontOfSize:11.0];
+        _areaLabel.font = [UIFont systemFontOfSize:10.0];
         [self addSubview:self.areaLabel];
         
         self.numLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_areaLabel.frame)-10*kScreenWidth/1334, 0, self.frame.size.width/2-30*kScreenWidth/1334, self.frame.size.height)];

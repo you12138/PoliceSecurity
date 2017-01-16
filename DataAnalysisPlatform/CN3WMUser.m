@@ -55,7 +55,7 @@
     self.bg_img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title_bg"]];
     _bg_img.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:_bg_img];
-    _bg_img.frame = CGRectMake(0, 0, 150*kScreenWidth/1334, 30*kScreenHeight/750);
+    _bg_img.frame = CGRectMake(0, 0, 180*kScreenWidth/1334, 30*kScreenHeight/750);
     
     self.areaWeatherLabel = [[UILabel alloc] init];
     _areaWeatherLabel.text = @"禾山派出所常住人口";
@@ -63,13 +63,13 @@
     _areaWeatherLabel.font = [UIFont systemFontOfSize:7.0];
     _areaWeatherLabel.textColor = [UIColor whiteColor];
     [self addSubview:_areaWeatherLabel];
-    _areaWeatherLabel.frame = CGRectMake(0, 0, 150*kScreenWidth/1334, 30*kScreenHeight/750);
+    _areaWeatherLabel.frame = CGRectMake(0, 0, 180*kScreenWidth/1334, 30*kScreenHeight/750);
     
     UIImageView *iconImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_jx"]];
     [self addSubview:iconImage];
     iconImage.frame = CGRectMake(12*kScreenWidth/1334, CGRectGetMaxY(_areaWeatherLabel.frame)+20*kScreenHeight/750, 30*kScreenWidth/1334, 30*kScreenHeight/750);
     
-    UILabel *iconLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(iconImage.frame)+3*kScreenWidth/1334, CGRectGetMaxY(_areaWeatherLabel.frame)+20*kScreenHeight/750, 50*kScreenWidth/1334, 30*kScreenHeight/750)];
+    UILabel *iconLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(iconImage.frame)+3*kScreenWidth/1334, CGRectGetMaxY(_areaWeatherLabel.frame)+20*kScreenHeight/750, 70*kScreenWidth/1334, 30*kScreenHeight/750)];
     iconLabel.textColor = [UIColor whiteColor];
     iconLabel.textAlignment = NSTextAlignmentLeft;
     iconLabel.text = @"(万/人)";

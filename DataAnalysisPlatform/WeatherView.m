@@ -17,6 +17,8 @@
 #import "HXAddressManager.h"
 #import "HXProvincialCitiesCountiesPickerview.h"
 
+
+
 #define hRate(height) height/750
 #define wRate(width) width/1334
 
@@ -126,7 +128,7 @@
 {
     NSString *url = [NSString stringWithFormat:WEATHER_URL, city];
     
-   [[NetWorkSingleton shareManager] getResultWithParameter:nil url:url showHUD:YES successBlock:^(id responseBody) {
+   [[NetWorkSingleton shareManager] getResultWithParameter:nil url:url showHUD:NO successBlock:^(id responseBody) {
        if (responseBody) {
            NSDictionary *dic = responseBody[@"data"];
            _model = [[WeatherModel alloc] init];
