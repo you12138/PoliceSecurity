@@ -128,7 +128,7 @@
     _titleLabel.frame = CGRectMake(-6, 0, kScreenWidth*300/1334, kScreenHeight*40/750);
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.textColor = [UIColor whiteColor];
-    _titleLabel.text = @"三维码使用用户";
+    _titleLabel.text = @"禾山派出所常住人口";
     [_userView addSubview:_titleLabel];
     
     _iconImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo"]];
@@ -136,7 +136,8 @@
     [_userView addSubview:_iconImg];
     
     _userLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_iconImg.frame) + 25*kScreenWidth/1334, CGRectGetMinY(_iconImg.frame), 130*3*kScreenWidth/1334, 28*3*kScreenHeight/750)];
-    _userLabel.text = @"三维码使用用户(万/人)";
+    _userLabel.text = @"(万/人)";
+    _userLabel.textAlignment = NSTextAlignmentLeft;
 //    _userLabel.font = [UIFont systemFontOfSize:<#(CGFloat)#>]
     _userLabel.textColor = [UIColor whiteColor];
     [_userView addSubview:_userLabel];

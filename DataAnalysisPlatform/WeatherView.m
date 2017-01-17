@@ -195,11 +195,13 @@
 {
     _bgimg = [[UIImageView alloc] init];
     _bgimg.image = [UIImage imageNamed:@"title_bg.png"];
-    _bgimg.frame = CGRectMake(0, -6, kScreenWidth*264/1334, kScreenHeight*65/750);
+    _bgimg.contentMode = UIViewContentModeScaleAspectFill;
+    _bgimg.clipsToBounds = YES;
+    _bgimg.frame = CGRectMake(0, 0, self.frame.size.width + 40*kScreenWidth/1334, kScreenHeight*60/750);
     [_weatherView addSubview:_bgimg];
     
     _titleLabel = [[UILabel alloc] init];
-    _titleLabel.frame = CGRectMake(0, 0, kScreenWidth*264/1334, kScreenHeight*40/750);
+    _titleLabel.frame = CGRectMake(0, 0, self.frame.size.width, kScreenHeight*60/750);
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.textColor = [UIColor whiteColor];
     [_weatherView addSubview:_titleLabel];
@@ -254,7 +256,7 @@
     [self loadDatawithCity:_titleLabel.text];
     
     UIButton *selectArea = [UIButton buttonWithType:(UIButtonTypeSystem)];
-    selectArea.frame = CGRectMake(0, -6, kScreenWidth*264/1334, kScreenHeight*65/750);
+    selectArea.frame = CGRectMake(0, -6, self.frame.size.width, kScreenHeight*70/750);
     [selectArea addTarget: self action:@selector(selectAction:) forControlEvents:(UIControlEventTouchUpInside)];
     [_weatherView addSubview:selectArea];
 

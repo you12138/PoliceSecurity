@@ -106,13 +106,13 @@
     [self.view addSubview:weatherView];
     [self.view addSubview:clickBtn];
     
-    
+    // 禾山派出所常住人口
     CN3WMUser *userView = [[NSBundle mainBundle] loadNibNamed:@"CN3WMUser" owner:nil options:nil].firstObject;
     userView.frame = CGRectMake(0, 108*2*kScreenHeight/750, 107*2*kScreenWidth/1334, 89*2*kScreenHeight/750);
     userView.backgroundColor = RGBA(47, 59, 100, 1.0);
     UIButton *clickUser = [UIButton buttonWithType:(UIButtonTypeSystem)];
     clickUser.frame = CGRectMake(0, 108*2*kScreenHeight/750, 107*2*kScreenWidth/1334, 89*2*kScreenHeight/750);
-    [clickUser addTarget:self action:@selector(btnclickUser:) forControlEvents:(UIControlEventTouchUpInside)];
+//    [clickUser addTarget:self action:@selector(btnclickUser:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:userView];
     [self.view addSubview:clickUser];
     
@@ -132,7 +132,7 @@
     
     UIButton *userAnalysisBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
     userAnalysisBtn.frame = CGRectMake(108*2*kScreenWidth/1334, 11*2*kScreenHeight/750, 115*2*kScreenWidth/1334, 186*2*kScreenHeight/750);
-    [userAnalysisBtn addTarget:self action:@selector(userAnalysisAction:) forControlEvents:(UIControlEventTouchUpInside)];
+//    [userAnalysisBtn addTarget:self action:@selector(userAnalysisAction:) forControlEvents:(UIControlEventTouchUpInside)];
     
     [self.view addSubview:UserAnalysisView];
     [self.view addSubview:userAnalysisBtn];
