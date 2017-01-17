@@ -27,7 +27,7 @@
         _bg_img.frame = CGRectMake(0, 0, 150*kScreenWidth/1334, 30*kScreenHeight/750);
         
         self.areaWeatherLabel = [[UILabel alloc] init];
-        _areaWeatherLabel.text = @"企业属性分布";
+        _areaWeatherLabel.text = @"物品信息";
         _areaWeatherLabel.textAlignment = NSTextAlignmentCenter;
         _areaWeatherLabel.font = [UIFont systemFontOfSize:7.0];
         _areaWeatherLabel.textColor = [UIColor whiteColor];

@@ -160,6 +160,21 @@
 		C28110F71DDD7FDE00CB32DC /* HYFBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C28110F61DDD7FDE00CB32DC /* HYFBModel.m */; };
 		C28110FA1DDD86B600CB32DC /* HYFBModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = C28110F91DDD86B600CB32DC /* HYFBModel2.m */; };
 		C28A6E221DDC58D800A92CAC /* AlertHYFB.m in Sources */ = {isa = PBXBuildFile; fileRef = C28A6E211DDC58D800A92CAC /* AlertHYFB.m */; };
+		E81DB2891E2DACA300C32F01 /* JHChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB26F1E2DACA300C32F01 /* JHChart.m */; };
+		E81DB28A1E2DACA300C32F01 /* JHColumnChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2721E2DACA300C32F01 /* JHColumnChart.m */; };
+		E81DB28B1E2DACA300C32F01 /* JHLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2741E2DACA300C32F01 /* JHLineChart.m */; };
+		E81DB28C1E2DACA300C32F01 /* JHPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2761E2DACA300C32F01 /* JHPieChart.m */; };
+		E81DB28D1E2DACA300C32F01 /* JHPieForeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2781E2DACA300C32F01 /* JHPieForeBGView.m */; };
+		E81DB28E1E2DACA300C32F01 /* JHPieItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB27A1E2DACA300C32F01 /* JHPieItemsView.m */; };
+		E81DB28F1E2DACA300C32F01 /* JHRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB27C1E2DACA300C32F01 /* JHRadarChart.m */; };
+		E81DB2901E2DACA300C32F01 /* JHRingChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB27E1E2DACA300C32F01 /* JHRingChart.m */; };
+		E81DB2911E2DACA300C32F01 /* JHScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2801E2DACA300C32F01 /* JHScatterChart.m */; };
+		E81DB2921E2DACA300C32F01 /* JHShowInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2821E2DACA300C32F01 /* JHShowInfoView.m */; };
+		E81DB2931E2DACA300C32F01 /* JHTableChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2841E2DACA300C32F01 /* JHTableChart.m */; };
+		E81DB2941E2DACA300C32F01 /* JHTableDataRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2861E2DACA300C32F01 /* JHTableDataRowModel.m */; };
+		E81DB2951E2DACA300C32F01 /* JHWaveChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2881E2DACA300C32F01 /* JHWaveChart.m */; };
+		E81DB2971E2DC2C500C32F01 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = E81DB2961E2DC2C500C32F01 /* delete.png */; };
+		E81DB29A1E2DF6C700C32F01 /* KKColumnChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E81DB2991E2DF6C700C32F01 /* KKColumnChart.m */; };
 		E820C8E41E2C7AD600BCF5DB /* fwlx.png in Resources */ = {isa = PBXBuildFile; fileRef = E820C8DB1E2C7AD600BCF5DB /* fwlx.png */; };
 		E820C8E51E2C7AD600BCF5DB /* icon_jx.png in Resources */ = {isa = PBXBuildFile; fileRef = E820C8DC1E2C7AD600BCF5DB /* icon_jx.png */; };
 		E820C8E61E2C7AD600BCF5DB /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = E820C8DD1E2C7AD600BCF5DB /* map.png */; };
@@ -441,6 +456,36 @@
 		C28110F91DDD86B600CB32DC /* HYFBModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYFBModel2.m; sourceTree = "<group>"; };
 		C28A6E201DDC58D800A92CAC /* AlertHYFB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertHYFB.h; sourceTree = "<group>"; };
 		C28A6E211DDC58D800A92CAC /* AlertHYFB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertHYFB.m; sourceTree = "<group>"; };
+		E81DB26E1E2DACA300C32F01 /* JHChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHChart.h; sourceTree = "<group>"; };
+		E81DB26F1E2DACA300C32F01 /* JHChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHChart.m; sourceTree = "<group>"; };
+		E81DB2701E2DACA300C32F01 /* JHChartHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHChartHeader.h; sourceTree = "<group>"; };
+		E81DB2711E2DACA300C32F01 /* JHColumnChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHColumnChart.h; sourceTree = "<group>"; };
+		E81DB2721E2DACA300C32F01 /* JHColumnChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHColumnChart.m; sourceTree = "<group>"; };
+		E81DB2731E2DACA300C32F01 /* JHLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLineChart.h; sourceTree = "<group>"; };
+		E81DB2741E2DACA300C32F01 /* JHLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLineChart.m; sourceTree = "<group>"; };
+		E81DB2751E2DACA300C32F01 /* JHPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPieChart.h; sourceTree = "<group>"; };
+		E81DB2761E2DACA300C32F01 /* JHPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPieChart.m; sourceTree = "<group>"; };
+		E81DB2771E2DACA300C32F01 /* JHPieForeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPieForeBGView.h; sourceTree = "<group>"; };
+		E81DB2781E2DACA300C32F01 /* JHPieForeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPieForeBGView.m; sourceTree = "<group>"; };
+		E81DB2791E2DACA300C32F01 /* JHPieItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPieItemsView.h; sourceTree = "<group>"; };
+		E81DB27A1E2DACA300C32F01 /* JHPieItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPieItemsView.m; sourceTree = "<group>"; };
+		E81DB27B1E2DACA300C32F01 /* JHRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRadarChart.h; sourceTree = "<group>"; };
+		E81DB27C1E2DACA300C32F01 /* JHRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRadarChart.m; sourceTree = "<group>"; };
+		E81DB27D1E2DACA300C32F01 /* JHRingChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRingChart.h; sourceTree = "<group>"; };
+		E81DB27E1E2DACA300C32F01 /* JHRingChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRingChart.m; sourceTree = "<group>"; };
+		E81DB27F1E2DACA300C32F01 /* JHScatterChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHScatterChart.h; sourceTree = "<group>"; };
+		E81DB2801E2DACA300C32F01 /* JHScatterChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHScatterChart.m; sourceTree = "<group>"; };
+		E81DB2811E2DACA300C32F01 /* JHShowInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHShowInfoView.h; sourceTree = "<group>"; };
+		E81DB2821E2DACA300C32F01 /* JHShowInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHShowInfoView.m; sourceTree = "<group>"; };
+		E81DB2831E2DACA300C32F01 /* JHTableChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableChart.h; sourceTree = "<group>"; };
+		E81DB2841E2DACA300C32F01 /* JHTableChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableChart.m; sourceTree = "<group>"; };
+		E81DB2851E2DACA300C32F01 /* JHTableDataRowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableDataRowModel.h; sourceTree = "<group>"; };
+		E81DB2861E2DACA300C32F01 /* JHTableDataRowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableDataRowModel.m; sourceTree = "<group>"; };
+		E81DB2871E2DACA300C32F01 /* JHWaveChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWaveChart.h; sourceTree = "<group>"; };
+		E81DB2881E2DACA300C32F01 /* JHWaveChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWaveChart.m; sourceTree = "<group>"; };
+		E81DB2961E2DC2C500C32F01 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		E81DB2981E2DF6C700C32F01 /* KKColumnChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColumnChart.h; sourceTree = "<group>"; };
+		E81DB2991E2DF6C700C32F01 /* KKColumnChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColumnChart.m; sourceTree = "<group>"; };
 		E820C8D91E2C615900BCF5DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E820C8DB1E2C7AD600BCF5DB /* fwlx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fwlx.png; sourceTree = "<group>"; };
 		E820C8DC1E2C7AD600BCF5DB /* icon_jx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_jx.png; sourceTree = "<group>"; };
@@ -634,6 +679,7 @@
 				C220C7751DDEE0C10015E027 /* loadingHud.png */,
 				C28110F31DDD421F00CB32DC /* 溯源.png */,
 				C243D4C81DD5B7DA0025C914 /* 00.png */,
+				E81DB2961E2DC2C500C32F01 /* delete.png */,
 				E820C8DA1E2C7AD600BCF5DB /* 公安icon */,
 				C243D4F51DD5C5860025C914 /* icon */,
 			);
@@ -721,6 +767,7 @@
 		C26BAAB01DD9673C0082416A /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				E81DB26D1E2DACA300C32F01 /* JHChart */,
 				C220C7711DDEDBAC0015E027 /* Toast */,
 				C220C7651DDED6770015E027 /* 归档 */,
 				C26BAB441DD9B8B40082416A /* MJExtension */,
@@ -925,6 +972,42 @@
 			name = AlertView;
 			sourceTree = "<group>";
 		};
+		E81DB26D1E2DACA300C32F01 /* JHChart */ = {
+			isa = PBXGroup;
+			children = (
+				E81DB2701E2DACA300C32F01 /* JHChartHeader.h */,
+				E81DB26E1E2DACA300C32F01 /* JHChart.h */,
+				E81DB26F1E2DACA300C32F01 /* JHChart.m */,
+				E81DB2711E2DACA300C32F01 /* JHColumnChart.h */,
+				E81DB2721E2DACA300C32F01 /* JHColumnChart.m */,
+				E81DB2981E2DF6C700C32F01 /* KKColumnChart.h */,
+				E81DB2991E2DF6C700C32F01 /* KKColumnChart.m */,
+				E81DB2731E2DACA300C32F01 /* JHLineChart.h */,
+				E81DB2741E2DACA300C32F01 /* JHLineChart.m */,
+				E81DB2751E2DACA300C32F01 /* JHPieChart.h */,
+				E81DB2761E2DACA300C32F01 /* JHPieChart.m */,
+				E81DB2771E2DACA300C32F01 /* JHPieForeBGView.h */,
+				E81DB2781E2DACA300C32F01 /* JHPieForeBGView.m */,
+				E81DB2791E2DACA300C32F01 /* JHPieItemsView.h */,
+				E81DB27A1E2DACA300C32F01 /* JHPieItemsView.m */,
+				E81DB27B1E2DACA300C32F01 /* JHRadarChart.h */,
+				E81DB27C1E2DACA300C32F01 /* JHRadarChart.m */,
+				E81DB27D1E2DACA300C32F01 /* JHRingChart.h */,
+				E81DB27E1E2DACA300C32F01 /* JHRingChart.m */,
+				E81DB27F1E2DACA300C32F01 /* JHScatterChart.h */,
+				E81DB2801E2DACA300C32F01 /* JHScatterChart.m */,
+				E81DB2811E2DACA300C32F01 /* JHShowInfoView.h */,
+				E81DB2821E2DACA300C32F01 /* JHShowInfoView.m */,
+				E81DB2831E2DACA300C32F01 /* JHTableChart.h */,
+				E81DB2841E2DACA300C32F01 /* JHTableChart.m */,
+				E81DB2851E2DACA300C32F01 /* JHTableDataRowModel.h */,
+				E81DB2861E2DACA300C32F01 /* JHTableDataRowModel.m */,
+				E81DB2871E2DACA300C32F01 /* JHWaveChart.h */,
+				E81DB2881E2DACA300C32F01 /* JHWaveChart.m */,
+			);
+			path = JHChart;
+			sourceTree = "<group>";
+		};
 		E820C8DA1E2C7AD600BCF5DB /* 公安icon */ = {
 			isa = PBXGroup;
 			children = (
@@ -1096,6 +1179,7 @@
 				C243D4C01DD5AF710025C914 /* CN3WMNews.xib in Resources */,
 				314B7D3F1DD8884000895227 /* CN3WMOnlineTrading.xib in Resources */,
 				C243D5431DD5C5860025C914 /* 矩形-7@2x.png in Resources */,
+				E81DB2971E2DC2C500C32F01 /* delete.png in Resources */,
 				C243D53B1DD5C5860025C914 /* 备案统计@3x.png in Resources */,
 				C243D5311DD5C5860025C914 /* zhu.png in Resources */,
 				C243D5281DD5C5860025C914 /* spjy.png in Resources */,
@@ -1173,8 +1257,10 @@
 				314B7D421DD888E700895227 /* CN3WMInternational.m in Sources */,
 				C220C76E1DDED6770015E027 /* MBProgressHUD.m in Sources */,
 				C26BAB101DD9AED00082416A /* AFURLSessionManager.m in Sources */,
+				E81DB28B1E2DACA300C32F01 /* JHLineChart.m in Sources */,
 				C26BAB0A1DD9AED00082416A /* AFHTTPSessionManager.m in Sources */,
 				C26BAAE61DD995090082416A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E81DB2941E2DACA300C32F01 /* JHTableDataRowModel.m in Sources */,
 				C243D4B91DD5AF140025C914 /* CN3WMUserAnalysis.m in Sources */,
 				314B7D3D1DD8883500895227 /* CN3WMOnlineTrading.m in Sources */,
 				C26BAB401DD9AEDF0082416A /* UIImage+WebP.m in Sources */,
@@ -1191,9 +1277,13 @@
 				C26BAAE71DD995090082416A /* View+MASAdditions.m in Sources */,
 				C243D4B41DD5AED00025C914 /* CN3WMIndustrial.m in Sources */,
 				C26BAAEC1DD9AC1C0082416A /* WeatherModel.m in Sources */,
+				E81DB2921E2DACA300C32F01 /* JHShowInfoView.m in Sources */,
 				C26BAB0D1DD9AED00082416A /* AFURLConnectionOperation.m in Sources */,
+				E81DB2931E2DACA300C32F01 /* JHTableChart.m in Sources */,
 				C220C76F1DDED6770015E027 /* README.mdown in Sources */,
+				E81DB28A1E2DACA300C32F01 /* JHColumnChart.m in Sources */,
 				C26BAAE01DD995090082416A /* MASConstraint.m in Sources */,
+				E81DB28C1E2DACA300C32F01 /* JHPieChart.m in Sources */,
 				C26BAB641DD9B8B40082416A /* NSObject+MJKeyValue.m in Sources */,
 				C26BAB111DD9AED00082416A /* NSString+Times.m in Sources */,
 				C243D4BE1DD5AF5E0025C914 /* CN3WMNews.m in Sources */,
@@ -1209,8 +1299,10 @@
 				C26BAAF11DD9AEBD0082416A /* NetWorkSingleton.m in Sources */,
 				C26BAAC11DD967480082416A /* LewPopupViewAnimationFade.m in Sources */,
 				C26BAB421DD9AEDF0082416A /* UIImageView+WebCache.m in Sources */,
+				E81DB2891E2DACA300C32F01 /* JHChart.m in Sources */,
 				C26BAB3D1DD9AEDF0082416A /* UIButton+WebCache.m in Sources */,
 				314B7D2E1DD841DF00895227 /* CN3WMTradeView.m in Sources */,
+				E81DB28E1E2DACA300C32F01 /* JHPieItemsView.m in Sources */,
 				C243D4AF1DD5AE270025C914 /* CN3WMUser.m in Sources */,
 				C26BAB361DD9AEDF0082416A /* SDImageCache.m in Sources */,
 				C26BAB371DD9AEDF0082416A /* SDWebImageCompat.m in Sources */,
@@ -1227,6 +1319,7 @@
 				C26BAAE81DD995090082416A /* ViewController+MASAdditions.m in Sources */,
 				C26BAB411DD9AEDF0082416A /* UIImageView+HighlightedWebCache.m in Sources */,
 				C26BAAC31DD967480082416A /* LewPopupViewAnimationSpring.m in Sources */,
+				E81DB2911E2DACA300C32F01 /* JHScatterChart.m in Sources */,
 				C26BAAE21DD995090082416A /* MASLayoutConstraint.m in Sources */,
 				C26BAAC01DD967480082416A /* LewPopupViewAnimationDrop.m in Sources */,
 				C26BAADF1DD995090082416A /* MASCompositeConstraint.m in Sources */,
@@ -1240,12 +1333,17 @@
 				314B7D471DD889C900895227 /* CN3WMServeAcount.m in Sources */,
 				C26BAB351DD9AEDF0082416A /* NSData+ImageContentType.m in Sources */,
 				C26BAB091DD9AED00082416A /* AFHTTPRequestOperationManager.m in Sources */,
+				E81DB28F1E2DACA300C32F01 /* JHRadarChart.m in Sources */,
 				C26BAB0F1DD9AED00082416A /* AFURLResponseSerialization.m in Sources */,
+				E81DB2901E2DACA300C32F01 /* JHRingChart.m in Sources */,
+				E81DB2951E2DACA300C32F01 /* JHWaveChart.m in Sources */,
 				C26BAB5F1DD9B8B40082416A /* MJProperty.m in Sources */,
 				C26BAB651DD9B8B40082416A /* NSObject+MJProperty.m in Sources */,
 				C26BAB3A1DD9AEDF0082416A /* SDWebImageDownloaderOperation.m in Sources */,
 				C26BAB081DD9AED00082416A /* AFHTTPRequestOperation.m in Sources */,
+				E81DB28D1E2DACA300C32F01 /* JHPieForeBGView.m in Sources */,
 				C26BAB391DD9AEDF0082416A /* SDWebImageDownloader.m in Sources */,
+				E81DB29A1E2DF6C700C32F01 /* KKColumnChart.m in Sources */,
 				C26BAAE31DD995090082416A /* MASViewAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

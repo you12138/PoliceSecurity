@@ -30,6 +30,6 @@
 
 #import "URL.h"
 #import "Masonry.h"
-
+#import "JHChartHeader.h"
 
 #endif /* PrefixHeader_pch */

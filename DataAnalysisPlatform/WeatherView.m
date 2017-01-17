@@ -95,7 +95,7 @@
     _weekLabel.font = [UIFont systemFontOfSize:7.0];
     _weekLabel.textColor = [UIColor whiteColor];
     [self addSubview:_weekLabel];
-    _weekLabel.frame = CGRectMake(CGRectGetMaxX(_aLineLabel.frame)+3*kScreenWidth/1334, CGRectGetMaxY(self.areaWeatherLabel.frame)+10*kScreenHeight/750, 160*kScreenWidth/1334, 20*kScreenHeight/750);
+    _weekLabel.frame = CGRectMake(CGRectGetMaxX(_aLineLabel.frame)+3*kScreenWidth/1334, CGRectGetMaxY(self.areaWeatherLabel.frame)+10*kScreenHeight/750, 190*kScreenWidth/1334, 20*kScreenHeight/750);
     
     self.weatherImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"000"]];
     [self addSubview:_weatherImg];

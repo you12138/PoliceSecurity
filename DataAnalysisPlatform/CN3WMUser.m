@@ -53,9 +53,9 @@
 - (void)loadXibUI
 {
     self.bg_img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title_bg"]];
-    _bg_img.contentMode = UIViewContentModeScaleAspectFill;
+//    _bg_img.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:_bg_img];
-    _bg_img.frame = CGRectMake(0, 0, 180*kScreenWidth/1334, 30*kScreenHeight/750);
+    _bg_img.frame = CGRectMake(0, -5*kScreenHeight/750, 180*kScreenWidth/1334, 40*kScreenHeight/750);
     
     self.areaWeatherLabel = [[UILabel alloc] init];
     _areaWeatherLabel.text = @"禾山派出所常住人口";
