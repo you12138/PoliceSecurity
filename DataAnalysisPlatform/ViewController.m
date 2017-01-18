@@ -160,15 +160,13 @@
     [self.view addSubview:clickWebSite];
     */
     
-    
-    CN3WMTradeView *tradeView = [[NSBundle mainBundle] loadNibNamed:@"CN3WMTradeView" owner:nil options:nil].firstObject;
+    // 禾山所人口统计
+    CN3WMTradeView *tradeView = [[CN3WMTradeView alloc] initWithFrame:CGRectMake(448*kScreenWidth/1334, 22*kScreenHeight/750, 442*kScreenWidth/1334, 336*kScreenHeight/750)];
     tradeView.backgroundColor = RGBA(47, 59, 100, 1.0);
-    tradeView.frame = CGRectMake(448*kScreenWidth/1334, 22*kScreenHeight/750, 442*kScreenWidth/1334, 336*kScreenHeight/750);
     [self.view addSubview:tradeView];
-    
-    MapView *mapView = [[NSBundle mainBundle] loadNibNamed:@"MapView" owner:nil options:nil].firstObject;
+    // 区域政府所在图
+    MapView *mapView = [[MapView alloc] initWithFrame:CGRectMake(448*kScreenWidth/1334, 360*kScreenHeight/750, 442*kScreenWidth/1334, kScreenHeight*390/750)];
     mapView.backgroundColor = RGBA(47, 59, 100, 1.0);
-    mapView.frame = CGRectMake(448*kScreenWidth/1334, 360*kScreenHeight/750, 442*kScreenWidth/1334, kScreenHeight*390/750);
     [self.view addSubview:mapView];
     
     // 区域派出所民警
@@ -340,12 +338,14 @@
     [btn addTarget:self action:@selector(animationViewDismiss:) forControlEvents:(UIControlEventTouchUpInside)];
     
     self.kkColumn = [[KKColumnChart alloc] initWithFrame:CGRectMake(0, 50*kScreenHeight/750, kScreenWidth, kScreenHeight-50*kScreenHeight/750)];
-    _kkColumn.valueArr = @[
-                         @[@214],
-                         @[@265],
-                         @[@316]
-                           ];
-    _kkColumn.xShowInfoText = @[@"出租房", @"自住房", @"单位用房"];
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:@[
+                                                           @[@214],
+                                                           @[@265],
+                                                           @[@316]
+                                                           ]];
+    _kkColumn.valueArr = [arr reverseObjectEnumerator].allObjects;
+    
+    _kkColumn.xShowInfoText = @[@"单位用房", @"自住房", @"出租房"];
     _kkColumn.originSize = CGPointMake(50, 50);
     _kkColumn.typeSpace = 120*kScreenHeight/750;
     _kkColumn.drawFromOriginX = 10;

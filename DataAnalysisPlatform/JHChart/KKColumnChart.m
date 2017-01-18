@@ -347,10 +347,6 @@
     }
     
     
-    
-    
-    
-    
     /*        动画展示         */
     for (NSInteger i = 0; i<_valueArr.count; i++) {
         
@@ -376,9 +372,9 @@
                 [self.drawLineValue addObject:lineValue];
             }
             
-            
-            
-            itemsView.backgroundColor = (UIColor *)(_columnBGcolorsArr.count<arr.count?[UIColor greenColor]:_columnBGcolorsArr[j]);
+            NSArray *colorArr = @[RGBA(253, 233, 149, 1.0), RGBA(246, 193, 253, 1.0), RGBA(190, 255, 255, 1.0)];
+            itemsView.backgroundColor = (UIColor *)colorArr[i];
+//            itemsView.backgroundColor = (UIColor *)(_columnBGcolorsArr.count<arr.count?[UIColor greenColor]:_columnBGcolorsArr[j]);
             [UIView animateWithDuration:1 animations:^{
                 
                 itemsView.frame = CGRectMake(_originSize.x, CGRectGetHeight(self.frame) - _originSize.y - (i * arr.count + j)*_columnWidth - i*_typeSpace - _typeSpace, height, _columnWidth);
