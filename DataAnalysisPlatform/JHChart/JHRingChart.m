@@ -62,7 +62,7 @@
         _totolCount += [obj floatValue];
         
     }
-
+    
 }
 
 
@@ -83,7 +83,7 @@
     for (id obj in _valueDataArr) {
         
         CAShapeLayer *layer = [CAShapeLayer layer] ;
-
+        
         UIBezierPath *path = [UIBezierPath bezierPath];
         
         layer.fillColor = [UIColor clearColor].CGColor;
@@ -91,11 +91,11 @@
         if (i<_fillColorArray.count) {
             layer.strokeColor =[_fillColorArray[i] CGColor];
         }else{
-             layer.strokeColor =[k_COLOR_STOCK[i%k_COLOR_STOCK.count] CGColor];
+            layer.strokeColor =[k_COLOR_STOCK[i%k_COLOR_STOCK.count] CGColor];
         }
         CGFloat cuttentpace = [obj floatValue] / _totolCount * (M_PI * 2 - _itemsSpace * _valueDataArr.count);
         totloL += [obj floatValue] / _totolCount;
-
+        
         [path addArcWithCenter:self.chartOrigin radius:_redius startAngle:lastBegin  endAngle:lastBegin  + cuttentpace clockwise:YES];
         
         layer.path = path.CGPath;
@@ -110,9 +110,9 @@
         [layer addAnimation:basic forKey:@"basic"];
         lastBegin += (cuttentpace+_itemsSpace);
         i++;
-
+        
     }
-
+    
 }
 
 
@@ -127,13 +127,13 @@
         id obj = _valueDataArr[i];
         id title = _titleDataArr[i];
         CGFloat currentSpace = [obj floatValue] / _totolCount * (M_PI * 2 - _itemsSpace * _valueDataArr.count);;
-//        NSLog(@"%f",currentSpace);
+        //        NSLog(@"%f",currentSpace);
         CGFloat midSpace = lastBegin + currentSpace / 2;
         
         CGPoint begin = CGPointMake(self.chartOrigin.x + sin(midSpace) * _redius, self.chartOrigin.y - cos(midSpace)*_redius);
         CGPoint endx = CGPointMake(self.chartOrigin.x + sin(midSpace) * longLen, self.chartOrigin.y - cos(midSpace)*longLen);
         
-//        NSLog(@"%@%@",NSStringFromCGPoint(begin),NSStringFromCGPoint(endx));
+        //        NSLog(@"%@%@",NSStringFromCGPoint(begin),NSStringFromCGPoint(endx));
         lastBegin += _itemsSpace + currentSpace;
         
         UIColor *color;
@@ -149,23 +149,23 @@
         
         CGPoint secondP = CGPointZero;
         // 修改
-        CGSize size = [title boundingRectWithSize:CGSizeMake(200, 100) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10*k_Width_Scale]} context:nil].size;
+        CGSize size = [title boundingRectWithSize:CGSizeMake(200, 100) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20*k_Width_Scale]} context:nil].size;
         
         if (midSpace<M_PI) {
-            secondP =CGPointMake(endx.x + 20*k_Width_Scale, endx.y);
-//          [self drawText:[NSString stringWithFormat:@"%.02f%c",[obj floatValue] / _totolCount * 100,'%'] andContext:contex atPoint:CGPointMake(secondP.x + 3, secondP.y - size.height / 2) WithColor:color andFontSize:10*k_Width_Scale];
+            secondP =CGPointMake(endx.x + 40*k_Width_Scale, endx.y);
+            //          [self drawText:[NSString stringWithFormat:@"%.02f%c",[obj floatValue] / _totolCount * 100,'%'] andContext:contex atPoint:CGPointMake(secondP.x + 3, secondP.y - size.height / 2) WithColor:color andFontSize:10*k_Width_Scale];
             // 修改
-            [self drawText:title andContext:contex atPoint:CGPointMake(secondP.x + 3, secondP.y - size.height / 2) WithColor:color andFontSize:10*k_Width_Scale];
-
+            [self drawText:title andContext:contex atPoint:CGPointMake(secondP.x + 3, secondP.y - size.height / 2) WithColor:color andFontSize:20*k_Width_Scale];
+            
         }else{
-             secondP =CGPointMake(endx.x - 20*k_Width_Scale, endx.y);
-//            [self drawText:[NSString stringWithFormat:@"%.02f%c",[obj floatValue] / _totolCount * 100,'%'] andContext:contex atPoint:CGPointMake(secondP.x - size.width - 3, secondP.y - size.height/2) WithColor:color andFontSize:10*k_Width_Scale];
+            secondP =CGPointMake(endx.x - 40*k_Width_Scale, endx.y);
+            //            [self drawText:[NSString stringWithFormat:@"%.02f%c",[obj floatValue] / _totolCount * 100,'%'] andContext:contex atPoint:CGPointMake(secondP.x - size.width - 3, secondP.y - size.height/2) WithColor:color andFontSize:10*k_Width_Scale];
             // 修改
-            [self drawText:title andContext:contex atPoint:CGPointMake(secondP.x - size.width-3, secondP.y - size.height / 2) WithColor:color andFontSize:10*k_Width_Scale];
+            [self drawText:title andContext:contex atPoint:CGPointMake(secondP.x - size.width-3, secondP.y - size.height / 2) WithColor:color andFontSize:20*k_Width_Scale];
         }
         [self drawLineWithContext:contex andStarPoint:endx andEndPoint:secondP andIsDottedLine:NO andColor:color];
         [self drawPointWithRedius:3*k_Width_Scale andColor:color andPoint:secondP andContext:contex];
-       
+        
     }
     
     

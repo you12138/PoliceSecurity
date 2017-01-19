@@ -45,7 +45,7 @@
     if ([[UIDevice currentDevice].model isEqualToString:@"iPhone"]) {
         [self loadMyView];
     }else {
-//        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        //        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
         UIButton *btn = [UIButton buttonWithType:(UIButtonTypeSystem)];
         [btn setTitle:@"Click Me" forState:(UIControlStateNormal)];
         btn.backgroundColor = [UIColor orangeColor];
@@ -112,7 +112,7 @@
     userView.backgroundColor = RGBA(47, 59, 100, 1.0);
     UIButton *clickUser = [UIButton buttonWithType:(UIButtonTypeSystem)];
     clickUser.frame = CGRectMake(0, 108*2*kScreenHeight/750, 107*2*kScreenWidth/1334, 89*2*kScreenHeight/750);
-//    [clickUser addTarget:self action:@selector(btnclickUser:) forControlEvents:(UIControlEventTouchUpInside)];
+    //    [clickUser addTarget:self action:@selector(btnclickUser:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:userView];
     [self.view addSubview:clickUser];
     
@@ -132,7 +132,7 @@
     
     UIButton *userAnalysisBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
     userAnalysisBtn.frame = CGRectMake(108*2*kScreenWidth/1334, 11*2*kScreenHeight/750, 115*2*kScreenWidth/1334, 186*2*kScreenHeight/750);
-//    [userAnalysisBtn addTarget:self action:@selector(userAnalysisAction:) forControlEvents:(UIControlEventTouchUpInside)];
+    //    [userAnalysisBtn addTarget:self action:@selector(userAnalysisAction:) forControlEvents:(UIControlEventTouchUpInside)];
     
     [self.view addSubview:UserAnalysisView];
     [self.view addSubview:userAnalysisBtn];
@@ -148,17 +148,17 @@
     [self.view addSubview:newsViewBtn];
     
     /*
-    CN3WMWebsite *webSiteView = [[NSBundle mainBundle] loadNibNamed:@"CN3WMWebsite" owner:nil options:nil].firstObject;
-    webSiteView.backgroundColor = RGBA(47, 59, 100, 1.0);
-    webSiteView.frame = CGRectMake(111*2*kScreenWidth/1334, 282*2*kScreenHeight/750, 112*2*kScreenWidth/1334, 93*2*kScreenHeight/750);
-    
-    UIButton *clickWebSite = [UIButton buttonWithType:(UIButtonTypeSystem)];
-    clickWebSite.frame = CGRectMake(111*2*kScreenWidth/1334, 282*2*kScreenHeight/750, 112*2*kScreenWidth/1334, 93*2*kScreenHeight/750);
-    [clickWebSite addTarget:self action:@selector(webSiteViewAction:) forControlEvents:(UIControlEventTouchUpInside)];
-    
-    [self.view addSubview:webSiteView];
-    [self.view addSubview:clickWebSite];
-    */
+     CN3WMWebsite *webSiteView = [[NSBundle mainBundle] loadNibNamed:@"CN3WMWebsite" owner:nil options:nil].firstObject;
+     webSiteView.backgroundColor = RGBA(47, 59, 100, 1.0);
+     webSiteView.frame = CGRectMake(111*2*kScreenWidth/1334, 282*2*kScreenHeight/750, 112*2*kScreenWidth/1334, 93*2*kScreenHeight/750);
+     
+     UIButton *clickWebSite = [UIButton buttonWithType:(UIButtonTypeSystem)];
+     clickWebSite.frame = CGRectMake(111*2*kScreenWidth/1334, 282*2*kScreenHeight/750, 112*2*kScreenWidth/1334, 93*2*kScreenHeight/750);
+     [clickWebSite addTarget:self action:@selector(webSiteViewAction:) forControlEvents:(UIControlEventTouchUpInside)];
+     
+     [self.view addSubview:webSiteView];
+     [self.view addSubview:clickWebSite];
+     */
     
     // 禾山所人口统计
     CN3WMTradeView *tradeView = [[CN3WMTradeView alloc] initWithFrame:CGRectMake(448*kScreenWidth/1334, 22*kScreenHeight/750, 442*kScreenWidth/1334, 336*kScreenHeight/750)];
@@ -177,7 +177,11 @@
     // 企业属性分布
     CN3WMOnlineTrading *onlineTradingView = [[CN3WMOnlineTrading alloc] initWithFrame:CGRectMake(892*kScreenWidth/1334, 228*kScreenHeight/750, 448*kScreenWidth/1334, 194*kScreenHeight/750)];
     onlineTradingView.backgroundColor = RGBA(47, 59, 100, 1.0);
+    UIButton *onlineTradingBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    onlineTradingBtn.frame = CGRectMake(892*kScreenWidth/1334, 228*kScreenHeight/750, 448*kScreenWidth/1334, 194*kScreenHeight/750);
+    [onlineTradingBtn addTarget:self action:@selector(onlineTradingBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:onlineTradingView];
+    [self.view addSubview:onlineTradingBtn];
     
     // 房屋类型
     CN3WMInternational *internationalView = [[CN3WMInternational alloc] initWithFrame:CGRectMake(892*kScreenWidth/1334, 424*kScreenHeight/750, 448*kScreenWidth/1334, 156*kScreenHeight/750)];
@@ -191,7 +195,11 @@
     
     CN3WMServeAcount *serveAcountView = [[CN3WMServeAcount alloc] initWithFrame:CGRectMake(892*kScreenWidth/1334, 582*kScreenHeight/750, 448*kScreenWidth/1334, 168*kScreenHeight/750)];
     serveAcountView.backgroundColor = RGBA(47, 59, 100, 1.0);
+    UIButton *serveAcountBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    serveAcountBtn.frame = CGRectMake(892*kScreenWidth/1334, 582*kScreenHeight/750, 448*kScreenWidth/1334, 168*kScreenHeight/750);
+    [serveAcountBtn addTarget:self action:@selector(serveAcountBtnAction:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:serveAcountView];
+    [self.view addSubview:serveAcountBtn];
     
 }
 
@@ -217,9 +225,9 @@
 
 - (void)userAnalysisAction:(UIButton *)btn
 {
-//    UserAnalysisViewController *vc = [[UserAnalysisViewController alloc] init];
-//    vc.view.frame = CGRectMake(100, 100, kScreenWidth-100, kScreenHeight-100);
-//    [self presentViewController:vc animated:NO completion:nil];
+    //    UserAnalysisViewController *vc = [[UserAnalysisViewController alloc] init];
+    //    vc.view.frame = CGRectMake(100, 100, kScreenWidth-100, kScreenHeight-100);
+    //    [self presentViewController:vc animated:NO completion:nil];
     
     AlertHYFB *view = [AlertHYFB defaultAlertView];
     view.parentView = self;
@@ -275,8 +283,8 @@
     _pie.valueArr = @[@301457, @567411];
     _pie.descArr = @[@"男", @"女"];
     _pie.positionChangeLengthWhenClick = 10;
-//  我在内部注释掉了这个属性
-//    _pie.showDescripotion = NO;
+    //  我在内部注释掉了这个属性
+    //    _pie.showDescripotion = NO;
     
     [_ring showAnimation];
     [_pie showAnimation];
@@ -311,7 +319,7 @@
     _column.xShowInfoText = @[@"党团员", @"政协人大", @"军烈家属", @"境外", @"残疾人", @"失业", @"独居老人", @"其他"];
     _column.originSize = CGPointMake(30, 30);
     _column.typeSpace = 30;
-//    _column.bgVewBackgoundColor = [UIColor blackColor];
+    //    _column.bgVewBackgoundColor = [UIColor blackColor];
     _column.drawFromOriginX = 10;
     _column.columnWidth = 40;
     _column.drawTextColorForX_Y = [UIColor greenColor];
@@ -356,6 +364,77 @@
     [_kkColumn showAnimation];
     
     [self.animationView addSubview:_kkColumn];
+    [self.animationView addSubview:btn];
+}
+
+/**
+ * 企业属性分布动画
+ */
+- (void)onlineTradingBtnAction:(UIButton *)sender
+{
+    [self.view addSubview:self.animationView];
+    self.animationView.backgroundColor = RGBA(2, 12, 49, 1.0);
+    
+    UIButton *btn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    btn.frame = CGRectMake(kScreenWidth - 80*kScreenWidth/1334, 30*kScreenHeight/750, 50*kScreenWidth/1334, 50*kScreenHeight/750);
+    [btn setImage:[UIImage imageNamed:@"delete"] forState:(UIControlStateNormal)];
+    [btn addTarget:self action:@selector(animationViewDismiss:) forControlEvents:(UIControlEventTouchUpInside)];
+    
+    self.column = [[JHColumnChart alloc] initWithFrame:CGRectMake(0, 50*kScreenHeight/750, kScreenWidth, kScreenHeight-50*kScreenHeight/750)];
+    _column.valueArr = @[@[@214],
+                         @[@245],
+                         @[@845],
+                         @[@1345]];
+    _column.typeSpace = 200*kScreenWidth/1334;
+    _column.xShowInfoText = @[@"机关单位", @"事业单位", @"企业单位", @"个体工商户"];
+    _column.originSize = CGPointMake(30, 30);
+    //    _column.bgVewBackgoundColor = [UIColor blackColor];
+    _column.drawFromOriginX = 10;
+    _column.columnWidth = 40;
+    _column.drawTextColorForX_Y = [UIColor greenColor];
+    _column.colorForXYLine = [UIColor greenColor];
+    _column.columnBGcolorsArr = @[RGBA(254, 234, 149, 1.0)];
+    [_column showAnimation];
+    
+    [self.animationView addSubview:_column];
+    [self.animationView addSubview:btn];
+    
+}
+
+/**
+ * 物品信息动画
+ */
+- (void)serveAcountBtnAction:(UIButton *)sender
+{
+    [self.view addSubview:self.animationView];
+    self.animationView.backgroundColor = RGBA(2, 12, 49, 1.0);
+    
+    UIButton *btn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    btn.frame = CGRectMake(kScreenWidth - 80*kScreenWidth/1334, 30*kScreenHeight/750, 50*kScreenWidth/1334, 50*kScreenHeight/750);
+    [btn setImage:[UIImage imageNamed:@"delete"] forState:(UIControlStateNormal)];
+    [btn addTarget:self action:@selector(animationViewDismiss:) forControlEvents:(UIControlEventTouchUpInside)];
+    
+    self.column = [[JHColumnChart alloc] initWithFrame:CGRectMake(0, 50*kScreenHeight/750, kScreenWidth, kScreenHeight-50*kScreenHeight/750)];
+    _column.valueArr = @[@[@1100],
+                         @[@400],
+                         @[@500],
+                         @[@100],
+                         @[@200],
+                         @[@300],
+                         @[@100],
+                         @[@800]];
+    _column.typeSpace = 60*kScreenWidth/1334;
+    _column.xShowInfoText = @[@"车辆", @"危爆物品", @"烈性犬", @"信鸽", @"船只", @"管制刀具", @"煤气罐", @"低幔小"];
+    _column.originSize = CGPointMake(30, 30);
+    //    _column.bgVewBackgoundColor = [UIColor blackColor];
+    _column.drawFromOriginX = 10;
+    _column.columnWidth = 40;
+    _column.drawTextColorForX_Y = [UIColor greenColor];
+    _column.colorForXYLine = [UIColor greenColor];
+    _column.columnBGcolorsArr = @[RGBA(254, 234, 149, 1.0)];
+    [_column showAnimation];
+    
+    [self.animationView addSubview:_column];
     [self.animationView addSubview:btn];
 }
 

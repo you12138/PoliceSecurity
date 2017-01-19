@@ -77,19 +77,19 @@
             colors = k_COLOR_STOCK;
         }
 #warning 作者注释掉了这方法
-//        if (!self.showDescripotion) {
-//            return;
-//        }
+        //        if (!self.showDescripotion) {
+        //            return;
+        //        }
         
         for (NSInteger i = 0; i<_descArr.count; i++) {
-        
-//            self drawLineWithContext:contex andStarPoint:<#(CGPoint)#> andEndPoint:<#(CGPoint)#> andIsDottedLine:<#(BOOL)#> andColor:<#(UIColor *)#>
             
-            [self drawQuartWithColor:colors[i%colors.count] andBeginPoint:P_M(15+self.frame.size.width/2*(i%2), 20*(i/2  )+25+_chartArcLength*2) andContext:contex];
+            //            self drawLineWithContext:contex andStarPoint:<#(CGPoint)#> andEndPoint:<#(CGPoint)#> andIsDottedLine:<#(BOOL)#> andColor:<#(UIColor *)#>
+            
+            [self drawQuartWithColor:colors[i%colors.count] andBeginPoint:P_M(15+self.frame.size.width/2*(i%2), 20*(i/2 )+25+_chartArcLength*2) andContext:contex];
             CGFloat present = [_valueArr[i] floatValue]/_allValueCount*100;
-            [self drawText:[NSString stringWithFormat:@"%@:%ld 占比:%.1f%c",_descArr[i],[_valueArr[i] integerValue],present,'%'] andContext:contex atPoint:P_M(30+self.frame.size.width/2*(i%2), 20*(i/2)+25+_chartArcLength*2) WithColor:[UIColor whiteColor] andTextFontSize:8];
+            [self drawText:[NSString stringWithFormat:@"%@:%ld 占比:%.1f%c",_descArr[i],[_valueArr[i] integerValue],present,'%'] andContext:contex atPoint:P_M(30+self.frame.size.width/2*(i%2), 20*(i/2)+25+_chartArcLength*2) WithColor:[UIColor whiteColor] andTextFontSize:10];
         }
-       
+        
         
     }
     
@@ -129,7 +129,7 @@
     for (NSInteger i = 0; i<_angleArr.count; i++) {
         
         if (i==0) {
-             [_countPreAngeleArr addObject:[NSNumber numberWithFloat:0]];
+            [_countPreAngeleArr addObject:[NSNumber numberWithFloat:0]];
         }
         CGFloat angle = 0.0;
         for (NSInteger j = 0; j<=i; j++) {
@@ -139,7 +139,7 @@
         }
         
         [_countPreAngeleArr addObject:[NSNumber numberWithFloat:angle]];
-
+        
         
     }
     
@@ -149,7 +149,7 @@
 
 -(void)showAnimation{
     
- 
+    
     
     if (_valueArr.count>0) {
         
@@ -210,7 +210,7 @@
         }
         __weak typeof(self) weakSelf = self;
         _pieForeView.select = ^(CGFloat angle,CGPoint p){
-           
+            
             [weakSelf judgeWhitchOneIsNowAngle:angle andShowPoint:p];
             
         };
@@ -239,14 +239,14 @@
             NSLog(@"%@",NSStringFromCGPoint(centerPoint));
             
             
-//            CALayer *lay = [CALayer layer];
-//            lay.frame = CGRectMake(0, 0, 2, 2);
-//            lay.backgroundColor = [UIColor blackColor].CGColor;
-//            lay.position = centerPoint;
-//            lay.cornerRadius = 1;
-//            lay.masksToBounds = YES;
-//            [self.layer addSublayer:lay];
-//
+            //            CALayer *lay = [CALayer layer];
+            //            lay.frame = CGRectMake(0, 0, 2, 2);
+            //            lay.backgroundColor = [UIColor blackColor].CGColor;
+            //            lay.position = centerPoint;
+            //            lay.cornerRadius = 1;
+            //            lay.masksToBounds = YES;
+            //            [self.layer addSublayer:lay];
+            //
             
             CGFloat standarSpa = _positionChangeLengthWhenClick;
             
@@ -255,7 +255,7 @@
             CGFloat xSpa = cos(NOW_ANGLE)*standarSpa;
             
             JHPieItemsView *itemsView = _layersArr[i];
-           
+            
             JHPieItemsView *saveItems = _layersArr[_saveIndex];
             
             CGFloat wid = self.frame.size.width-20;
@@ -278,7 +278,7 @@
                 colors = k_COLOR_STOCK;
                 
             }
-             CGFloat present = [_valueArr[i] floatValue]/_allValueCount*100;
+            CGFloat present = [_valueArr[i] floatValue]/_allValueCount*100;
             [UIView animateWithDuration:0.3 animations:^{
                 if (weakself.saveIndex==i) {
                     
@@ -286,7 +286,7 @@
                         weakself.showInfoView.hidden = NO;
                         itemsView.center = CGPointMake(weakself.frame.size.width/2+xSpa, 10+wid/2+spa);
                         [weakself.showInfoView updateFrameTo:CGRectMake(p.x, p.y, weakself.showInfoView.frame.size.width, weakself.showInfoView.frame.size.height) andBGColor:colors[i%colors.count] andShowContentString:[NSString stringWithFormat:@"%@ % 3ld 占比:%.1f%c",weakself.descArr[i],[weakself.valueArr[i] integerValue],present,'%']];
-//                        _showInfoView.frame = C   GRectMake(p.x, p.y, _showInfoView.frame.size.width, _showInfoView.frame.size.height);
+                        //                        _showInfoView.frame = C   GRectMake(p.x, p.y, _showInfoView.frame.size.width, _showInfoView.frame.size.height);
                         
                     }else{
                         weakself.showInfoView.hidden = YES;
@@ -303,9 +303,9 @@
                     
                 }
             }];
-           
             
-               _saveIndex = i;
+            
+            _saveIndex = i;
             
             break;
         }
